@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-bl from-black to-[#191970] h-screen w-screen flex flex-col"
+  >
+    <div class="h-screen">
+      <!-- top section -->
+      <div class="flex-1 h-1/4 flex justify-center items-center gap-4">
+        <h1
+          class="text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-white hover:text-6xl duration-[3s]"
+        >
+          Hall of Fame Card Collection
+        </h1>
+        <br />
+
+        <p class="text-xl font-semibold text-slate-300">
+          Witness the life and careers of some of the greatest to ever grace the
+          New York company's ring!
+        </p>
+
+        <button
+          class="bg-black text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-slate-900 transition duration-300"
+        >
+          Get Started Now
+        </button>
+      </div>
+      <!-- main card section -->
+      <div class="flex-1 h-2/3 flex flex-row p-4 gap-4">
+        <div
+          class="flex-1 max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+        >
+          <img
+            class="w-full sm:h-32 md:h-40 lg:h-48 object-cover hover:p-20 duration-[3s]"
+            src="./images/The Corporate Ministry, 1999.jpeg"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">The Undertaker</h2>
+            <p class="text-gray-700">
+              The phenom leads out the Ministry, 1999.
+            </p>
+            <div class="mt-4">
+              <button
+                class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-slate-900 duration-[3s]"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1 max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+        >
+          <img
+            class="w-full sm:h-32 md:h-40 lg:h-48 object-cover hover:p-20 duration-[3s]"
+            src="./images/Jeff Hardy Finally Wins the Big Won - Armageddon….jpeg"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">Jeff Hardy</h2>
+            <p class="text-gray-700">
+              Jeff Hardy post- championship victory, 2008
+            </p>
+            <div class="mt-4">
+              <button
+                class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-slate-900 duration-[3s]"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1 max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+        >
+          <img
+            class="w-full sm:h-32 md:h-40 lg:h-48 object-cover hover:p-20 duration-[3s]"
+            src="./images/Shawn Michaels WrestleMania 12.jpeg"
+            alt="Card image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold mb-2">Shawn Michaels</h2>
+            <p class="text-gray-700">HBK after his championship win, 1996</p>
+            <div class="mt-4">
+              <button
+                class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-slate-900 duration-[3s]"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
+      <!-- footer section -->
+      <div
+        class="flex-1 h-1/5 flex flex-col justify-center items-center gap-4 bg-slate-700"
+      >
+        <h1 class="font-bold">Contact us for more such cards!</h1>
+        <form action="submit-form.php" method="post">
+          <label for="name" class="text-lg font-semibold">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email" class="text-lg font-semibold">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          <button
+            type="submit"
+            class="bg-slate-400 p-2 ml-48 mt-4 items-center rounded-lg font-semibold hover:bg-slate-900 duration-[3s] hover:text-white"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
